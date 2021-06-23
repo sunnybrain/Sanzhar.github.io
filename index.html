@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 55 Project Modification</title>
+    <link rel="stylesheet" href="css/setting.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SideNav -->
+
+    <nav class="nav">
+      <div class="nav__search">
+        <input type="text" class="nav__search-input" placeholder="Поиск" />
+        <button class="nav__search-button">
+          <i class="fas fa-search nav__search-icon"></i>
+        </button>
+      </div>
+      <div class="nav__nav-secondary nav-secondary">
+        <ul class="nav-secondary__list">
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link">Фильмы</a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link">Сериалы</a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link">Мультфильмы</a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link">Клипы</a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link">Трейлеры</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+
+    <main class="main">
+      <!-- Header -->
+
+      <header class="main__header header">
+        <div class="header__search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="header__logo-box">
+          <a href="#" class="header__logo-link"
+            ><img src="images/8.png" alt="logo" class="header__logo-image"
+          /></a>
+        </div>
+      </header>
+
+      <div class="main__content">
+        <section class="main__entry entry">
+          <div class="entry__movie-banner">
+            <h3 class="entry__genre">Комедия</h3>
+            <h2 class="entry__movie-name">Марсианин</h2>
+            <p class="entry__movie-description">
+              История человека, выжившего на чужой планете в одиночку
+            </p>
+            <span class="entry__movie-rating"> IMDb: 8.0 </span>
+            <span class="entry__movie-rating"> Кинопоиск: 7.7 </span>
+          </div>
+          <div class="entry__movies-data">
+            <div class="entry__watched-movies watched-movies">
+              <h3 class="watched-movies__title">Просмотренные фильмы</h3>
+              <ul class="watched-movies__list">
+                <li class="watched-movies__item">
+                  <a href="#" class="watched-movies__link">Логан</a>
+                  <a href="#" class="watched-movies__trash-icon"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </li>
+                <li class="watched-movies__item">
+                  <a href="#" class="watched-movies__link"
+                    >Лига Справедливости</a
+                  >
+                  <a href="#" class="watched-movies__trash-icon"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </li>
+                <li class="watched-movies__item">
+                  <a href="#" class="watched-movies__link">Ла-Ла Лэнд</a>
+                  <a href="#" class="watched-movies__trash-icon"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </li>
+                <li class="watched-movies__item">
+                  <a href="#" class="watched-movies__link">Одержимость</a>
+                  <a href="#" class="watched-movies__trash-icon"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </li>
+                <li class="watched-movies__item">
+                  <a href="#" class="watched-movies__link"
+                    >Скотт Пилигрим Против Всех</a
+                  >
+                  <a href="#" class="watched-movies__trash-icon"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="entry__new-movies new-movies">
+              <h3 class="new-movies__title">Добавить новый фильм</h3>
+              <form class="new-movies__form">
+                <label for="new-movie" class="new-movies__label"
+                  >Введите название фильма</label
+                >
+                <input
+                  id="new-movie"
+                  name="new movie"
+                  type="text"
+                  class="new-movies__input"
+                  placeholder="Что уже посмотрено...?"
+                />
+                <label for="favorite-movie" class="new-movies__label"
+                  >Сделать его любимым?</label
+                >
+                <div class="new-movies__checkbox-container">
+                  <input
+                    id="favorite-movie"
+                    type="checkbox"
+                    class="new-movies__favorite"
+                  />
+                  <label for="favorite movie" class="new-movies__label"
+                    >Да!</label
+                  >
+                </div>
+                <button class="new-movies__button" type="submit">
+                  Подтвердить
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="main__aside aside">
+          <h3 class="aside__title">Реклама от спонсоров</h3>
+          <div class="aside__img-box">
+            <img src="images/4.jpeg" alt="advertisement" class="aside__image" />
+          </div>
+          <div class="aside__img-box">
+            <img src="images/3.jpeg" alt="advertisement" class="aside__image" />
+          </div>
+          <div class="aside__img-box">
+            <img src="images/5.jpeg" alt="advertisement" class="aside__image" />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- End of Main Content -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
